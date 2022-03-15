@@ -15,7 +15,6 @@ body{
     text-transform: uppercase;
     box-sizing: border-box;
     text-transform: uppercase;
-    outline: none;
 }
 .navigationBar{
     background: #181818;
@@ -126,6 +125,7 @@ body{
     display: inline-block;
     border-radius: 32px;
     margin-bottom: 10px;
+    outline: none;
 }
 .resetButton{
     background-color: black;
@@ -138,6 +138,7 @@ body{
     text-decoration: none;
     display: inline-block;
     border-radius: 32px;
+    outline: none;
 }
 .inputs-container{
     justify-content: center;
@@ -189,6 +190,7 @@ body{
     border-radius: 8px;
     border-style: dotted;
     text-align: left;
+    outline: none;
 }
 .title{
     font-size: 6rem;
