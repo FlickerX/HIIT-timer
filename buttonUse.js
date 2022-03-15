@@ -1,6 +1,5 @@
 function instructionPage(){
     let mainPage = document.querySelector(".mainPage");
-    // mainPage.style.display = "none";
     mainPage.innerHTML = `
     <div class = "about">
         <h2 class="title">Input</h1>
@@ -20,7 +19,6 @@ function instructionPage(){
         <h3>Thats all, enjoy :3</h3>
     </div>
     `;
-    // document.querySelector(".title").style.color = "white";
 }
 function homePage(){
     window.location.reload();
