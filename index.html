@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d10d6a7aac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkButton">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label for="" class="logo">NIKITUNYA</label>
+        <ul class="mainNavbar">
+            <li><a onclick="homePage()" href="#home">HOME</a></li>        
+            <li><a onclick="instructionPage()" href="#instruction">INSTRUCTION</a></li>
+
+        </ul>
+    </nav>
+    <div class="mainPage">
+        <div class="timePage">
+            <div class="backgroundPage">
+                <div class="phasePage">
+                    <span class="phase">Prepare</span>
+                </div>
+                <div class="timerPage">
+                    <span class="time" id="time">00:00</span>
+                </div>
+                <div class="roundsPage">
+                    <span class="roundsCount" id="roundsCount">1/3</span>
+                </div>
+                <div class="mainButtons">
+                    <div class="startButtonPage">
+                        <button onclick="startButton()" class="startButton" id="startButton">Start</button>
+                    </div>
+                    <div class="resetButtonPage">
+                        <button  class = "resetButton" id="resetButton" >Reset</button>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+            <ul class="mainSetting">
+                <li class="roundTime">
+                    <label for="afterInput" class="afterInput">Work time:</label>
+                    <input type="text" name="workTime" class="workTime" id="workTime" placeholder="" value="0.5"> 
+                </li>
+                <li class="restingTime">
+                    <label for="afterInput" class="afterInput">Rest time:</label>
+                    <input type="text" name="restTime" class="restTime" id="restTime" placeholder="" value="0.5"> 
+                </li>
+                <li class="sets">
+                    <label for="afterInput" class="afterInput">Sets:</label>
+                    <input type="number" name="setsAmount" class="setsAmount" id="setsAmount" placeholder="" value="1"> 
+                </li>
+                <li class="prepareTiming">
+                    <label for="afterInput" class="afterInput">Prepare Time:</label>
+                    <input type="text" name="prepareTime" class="prepareTime" id="prepareTime" placeholder="" value="10"> 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Audio sounds -->
+    <audio id="alertPrepareSeconds" loop>
+        <source src="sounds/10secUse.mp4"/>
+    </audio>
+    <audio id="boxBell">
+        <source src="sounds/boxbell.mp4"/>
+    </audio>
+    <script src="mainApp.js"></script>
+    <script src="buttonUse.js"></script>
+</body>
+</html>
