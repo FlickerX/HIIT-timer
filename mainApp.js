@@ -9,7 +9,6 @@ function startButton(){
     const prepareTimeInput = document.querySelector(".prepareTime").value;
     const startCountdown = document.querySelector(".time");
     const background = document.querySelector("body");
-    background.style.height = "100vh";
     const mainBody = document.querySelector(".backgroundPage");
 
     let work = true;
@@ -58,7 +57,8 @@ function startButton(){
         setTimeout(()=>{    
             let startInterval = setInterval(() => {
                 if(index === temp){
-                    clearInterval(startInterval);                
+                    clearInterval(startInterval);   
+                    background.style.height = "90vh";             
                     background.innerHTML = `
                     <h1 class="title">Congratulations</h1>
                     <div class="inputs-container">
